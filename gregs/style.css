@@ -1,0 +1,117 @@
+
+
+/* layout */
+body									{ background: #FAFAFA url('images/bg.png') 0 0 repeat-x; font-size: 13px; color: #737373;
+												font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;}
+#fixed_bar						{ width: 100%; position: fixed; top: 0; left: 0; 
+												background: transparent url('images/postage.png') 0 0 repeat-x; z-index: 100; height: 20px;}
+	#tumblrstamp				{ margin-top: 8px;  }
+#wrapper							{ width: 787px; margin: 0 auto;}
+
+#header								{ text-align: center; height: 110px; border-bottom: 1px solid #DCDCDC;}
+	#pagetitle					{ font-size: 36px; margin-top: 33px}
+	.description				{ font-size: 1.3em; margin-top: 20px}
+
+#content							{ float: left; width: 535px; padding-right: 25px; margin: 30px 0;}
+	.post								{ border-bottom: 1px solid #DCDCDC; padding-bottom: 30px; margin-bottom: 30px}
+	.post-side					{ width: 26px; margin-right: 5px; float: left; }
+		.post-type				{ width: 26px; height: 25px; background: transparent url('images/sideicons.png') 0 0 no-repeat;}
+		.quote-icon				{ background-position: 0 -124px;}
+		.photo-icon				{ background-position: 0 -31px;}
+		.link-icon				{ background-position: 0 -155px;}
+		.chat-icon				{ background-position: 0 -186px;}
+		.audio-icon				{ background-position: 0 -93px;}
+		.text-icon				{ background-position: 0 -372px;}
+		
+	.post-content				{ width: 500px; float: left; }
+		.post-utama				{ display: block; color: #595959}
+		.post-quote				{ font-size: 23px; font-weight: bold; margin-bottom: 7px; }
+		.post-link				{ font-size: 23px; font-weight: bold; margin-bottom: 7px; }
+		.post-text h2			{ font-size: 23px; font-weight: bold; margin-bottom: 7px; }
+		.post-img					{ -moz-border-radius: 3px; -moz-box-shadow: 2px 2px 3px #E0E0E0;
+												-webkit-border-radius: 3px;	-webkit-box-shadow: 2px 2px 3px #E0E0E0;
+												border-radius: 3px; box-shadow: 2px 2px 3px #E0E0E0;
+												background: white; border: 1px #B9B9B9 solid; max-width: 488px;
+												padding: 4px; position: relative;}
+		.post-chat li			{ display: block; padding: 5px; margin: 2px 0; font-size: 13px;}
+			li.even					{ background-color: #f0f0f0;}
+			li.odd					{ background-color: #E5E5E5;}
+				.name					{ font-weight: bold;}
+		
+		
+		.post-audio				{ padding: 10px; background: transparent url('images/player.png') 0 0 no-repeat; height: 105px; margin-bottom: 7px}
+			.photo-album 		{	float: left; margin-right: 8px;}
+			.photo-album img{	width: 102px; height: 102px;}
+			.audio-content	{ float: left; font-weight: bold; width: 370px;}
+				.player				{ height: 33px; margin: 8px 0 0 4px}
+				.audio-info		{ float: left; width: 279px; height: 60px; color: #595959;}
+					.audio-info div	{ height: 28px; line-height: 28px; margin-top: 3px; padding-left: 27px}
+					.song-title			{ }
+					.artist					{ font-weight: bold;}
+				.plays				{ float: left; width: 87px; height: 60px; margin: 3px 0 0 4px; text-align: center}
+					.count			{ font-size: 20px; margin-top: 13px; display: block;}
+					.label			{ font-size: 11px; color: #ACB09B}
+			
+		.post-text				{ }	
+			.post-text ul, blockquote, p { margin: 7px 0;}
+			.post-text ul		{ margin-left: 30px; list-type: bullet;}
+			.post-text li		{ list-style: disc;}
+			blockquote			{ padding: 3px 10px; border-left: 2px solid #BABABA; background: #F0F0F0; color: #323232; margin-left: 20px; margin-right: 10px;}
+			.post-text 			{ line-height: 140%;}
+			
+		.text							{ margin-top: 10px;}
+		.post-info				{ margin-top: 20px; font-size: 11px;}
+		.post-info span		{ display: block; float: left; }
+		.post-info > span	{ margin: 5px 3px 0 0 }
+		.post-info a			{ color: #595959;}
+			.icon						{ width: 14px; height: 13px; 
+												background: transparent url('images/detailsicons.png') 0 0 no-repeat; margin-right: 3px; }
+			.love						{ background-position: -20px 0;}
+			.tag						{ background-position: -60px 0;}
+
+	.paging							{ width: 34px; height: 27px; background: transparent url('images/pagination.png') 0 0 no-repeat;}
+	.left								{ background-position: 0 0; float: left;}
+	.left:hover					{ background-position: 0 -33px; float: left;}
+	.right							{ background-position: -40px 0; float: right;}
+	.right:hover				{ background-position: -40px -33px;}
+	
+#sidebar							{ float: left; width: 200px; padding-left: 25px; margin-top: 30px;}
+	.box								{ background: #F0F0F0; margin-bottom: 15px;}
+	.user-info					{ padding: 30px;}
+	.user-info img			{ -moz-border-radius: 3px; -moz-box-shadow: 2px 2px 3px #E0E0E0; -
+												-webkit-border-radius: 3px; -webkit-box-shadow: 2px 2px 3px #E0E0E0;
+												border-radius: 3px; box-shadow: 2px 2px 3px #E0E0E0; 
+												background: white; border: 1px #B9B9B9 solid; padding: 4px; width: 128px;}
+	.search							{ display: block; border: none; font-size: 12px; line-height: 12px; color: #595959;
+												width: 167px; padding-left: 33px; height: 30px; margin-bottom: 15px;
+												background: transparent url('images/searchinput.png') 0 0 no-repeat;}	
+	.follow							{ display: block; height: 45px; line-height: 40px; font-weight: bold; text-align: center;
+												background: transparent url('images/sidebar.png') 0 0 no-repeat; color: #595959; font-size: 20px; margin-bottom: 15px}
+	.friends						{ padding: 5px; }
+	.friends h2					{ font-size: 15px; margin-bottom: 5px;}
+
+												
+#footer								{ border-top: 1px solid #DCDCDC; padding: 25px 0 35px 0;}
+	.footer-info				{ display: block; float: left; height: 33px;}
+	
+	.powered_by					{ width: 125px; margin-right: 6px; background: transparent url('images/powered.png') 0 0 no-repeat;}
+	.powered_by:hover		{ background-position: 0 -39px;}
+	.copyright					{ width: 510px; margin-right: 6px; font-size: 11px;}
+		.moreinfo					{ font-size: 9px}
+	.action							{ background: transparent url('images/actionicons.png') 0 0 no-repeat;}
+	.rss								{ width: 34px; margin-right: 6px; background-position: 0 -78px;}
+		.rss:hover				{ background-position: -40px -78px;}
+	.random							{ width: 34px; margin-right: 6px; background-position: 0 -39px;}
+		.random:hover			{ background-position: -40px -39px;}
+	.home								{ width: 34px; margin-right: 6px; background-position: 0 0;}
+		.home:hover				{ background-position: -40px 0;}
+
+/* style */
+#content							{ border-right: 1px solid #DCDCDC;}
+a											{ text-decoration: none; color: #DC2509;}
+a:hover								{ text-decoration: underline; color: #DC2509}
+h1, h2, h3, h4, h5, h6 { color: #595959; line-height: 1.25em; text-shadow: white 0 1px 0;}
+
+
+/* others */
+.clear				{ clear: both; height: 1px; display: block;}

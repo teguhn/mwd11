@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Latihan animasi</title>
+		<style type="text/css">
+			body, input					{font: 11px  Verdana, Arial, sans-serif; color: #555;}
+			#wrapper			{	width: 960px; margin: 0 auto; text-align: left; }
+			.box					{ width: 180px;  margin:20px; background-color: #09C; float: left; color: #eee; padding: 10px}
+			.right				{ float: right; width: 700px;}
+			#container		{ position: relative; width: 100%; height: 600px; border: 1px dashed #9C0}
+			.kotak					{ width: 180px; height: 180px; background-color: #0C9; margin: 10px 0; color: #eee; padding: 10px; border: 1px solid #789;}
+			
+			.halo					{ position: fixed; bottom: 0; right: 30; background-color: #09F; width: 30px; padding: 10px; color: #FFF; display: block}
+			.hello_bar		{ position: fixed; bottom: 0; left: 0; background-color: #09F; display: block; color: #FFF; width: 100%; text-align: center;}
+			
+			.clear				{ clear: both; height: 1px}
+			
+			.close				{ float: right; color: white; padding: 5px; text-decoration: none;}
+			.close:hover	{ background-color: #06C;}
+			
+			
+		</style>
+		
+		<!-- load jQuery nya. loadnya jquery duluan. -->
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+	</head>
+	<body>
+	<div id="wrapper">
+		<h1>Latihan efek...</h1>
+		<div class="box box-1">
+			<p>I believe it's perfectly fine to spend some of your time, maybe even a lot of your time, not firing on all cylinders. Just like full employment isn't necessarily good for an economy, full capacity isn't always great for your mind.</p>
+		</div>
+		
+		<div class="right" >
+			<input type="button" class="tombol_show" value="show()"/>
+			<input type="button" class="tombol_hide" value="hide()"/>
+			<input type="button" class="tombol_toggle" value="toggle()"/>
+			<br class="clear" />
+			<input type="button" class="tombol_fadeIn" value="fadeIn()"/>
+			<input type="button" class="tombol_fadeOut" value="fadeOut()"/>
+			<input type="button" class="tombol_fadeTo" value="fadeTo()"/> <input id="fade_value" type="text" value="0.5" />
+			<br class="clear" />
+			<input type="button" class="tombol_slideUp" value="slideUp()"/>
+			<input type="button" class="tombol_slideDown" value="slideDown()"/>
+			<input type="button" class="tombol_slideToggle" value="slideToggle()"/>
+			<br class="clear" />
+		</div>
+		<br class="clear" />
+		
+		<h1>Latihan animasi custom...</h1>
+		<div id="container">
+			<div class="kotak animasi-1">1</div>
+		</div>
+		<br class="clear" />
+		
+	</div>
+	
+	<a class="halo" href="#">Halo!</a>
+	<div class="hello_bar">
+		<a href="#close" class="close">X</a>
+		<h1>Hi there! my name is anwari!</h1>
+	</div>
+	
+	</body>
+</html>
